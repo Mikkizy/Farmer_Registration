@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Farmer Registration</string>
+    <string name="save">See all registered farmers</string>
+    <string name="enter_your_data">Enter Your Data</string>
+    <string name="fullName">Full Name</string>
+    <string name="register">Register</string>
+    <string name="copyright">Powered by Babban Gona</string>
+    <string name="cropType">Crop Type</string>
+    <string name="saved_farmer">Saved Farmer</string>
+    <string name="full_name">Full Name</string>
+    <string name="crop_type">Crop Type</string>
+    <string name="no_registered_farmers">No Registered Farmers</string>
+    <string name="farmer_registration">Farmer Registration</string>
+    <string name="close_screen">Close Screen</string>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registration_bg">
+
+    <ImageView
+        android:id="@+id/storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_memory"
+        android:contentDescription="@string/save" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/animatedGIF"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            android:gravity="center_horizontal">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:scaleType="fitXY"
+                android:foregroundGravity="center_horizontal"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:src="@drawable/ic_babban_gon_logo"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="26sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/farmer_registration"
+            android:textColor="@android:color/black" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullNameLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/fullName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fullNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cropTypeLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/cropType">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cropTypeET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:inputType="textPersonName"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registrationBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_32sdp"
+            android:backgroundTint="#303F9F"
+            android:fontFamily="@font/poppins"
+            android:insetTop="0dp"
+            android:layout_marginTop="40dp"
+            android:visibility="visible"
+            android:insetBottom="0dp"
+            android:paddingVertical="14dp"
+            android:textAlignment="center"
+            android:text="@string/register" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/copyright_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/poppins"
+        android:layout_centerHorizontal="true"
+        android:textSize="11sp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/copyright"
+        android:textColor="@android:color/darker_gray" />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = "1.5.31"
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.3'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.21"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:2.40.3"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5"
+        classpath "org.jlleitschuh.gradle:ktlint-gradle:10.3.0"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext{
+    cardView= '1.0.0'
+    coroutines = '1.5.2'
+    moshi = '1.12.0'
+    moshiConverter = '2.4.0'
+    retrofit = '2.9.0'
+    wangLoading = '2.1.3'
+    materialDesign = '1.3.0'
+    roomVersion = '2.4.1'
+    archLifecycleVersion = '2.2.0'
+    coreTestingVersion = '2.1.0'
+    animatedCheckbox = '1.0.3'
+    navVersion = "2.3.5"
+    dataStoreVersion = '1.0.0'
+    loggingInterceptor = '4.9.1'
+    hilt_version = '2.40.3'
+
+    /*ITEX dependencies*/
+    anko = '0.10.4'
+    rxandroid = '2.0.1'
+    rxjava = '2.0.8'
+    multidex = '2.0.1'
+    reactiveStreams = '1.1.1'
+    gson = '2.8.6'
+    retrofitXml = '2.2.0'
+    joda = '2.9.9.2'
+    work = '2.0.1'
+}

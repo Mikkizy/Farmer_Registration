@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#215FFF</color>
+    <color name="colorPrimaryDark">#010991</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorBackground">#F4F4F4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#C0C0C0</color>
+    <color name="sheet_bg">#e5efff</color>
+    <color name="red">#FF0000</color>
+    <color name="transparent_blue">#DBE9FF</color>
+    <color name="light_blue">#FFFFFF</color>
+    <color name="colorCBCBCB">#CBCBCB</color>
+    <color name="green">#4CAF50</color>
+    <color name="itex_green">#20c997</color>
+</resources>
